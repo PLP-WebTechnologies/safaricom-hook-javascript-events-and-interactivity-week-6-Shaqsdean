@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+.header{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #f8f8f8; 
+    padding: 10px 20px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+.lightmode{
+    position: fixed;
+    top: 20px;  
+    right: 20px; 
+    cursor: pointer; 
+    font-size: 1.3em; 
+    z-index: 9999;
+}
+
+body.dark-mode {
+    background-color: #00192e;
+    color: white;
+}
+
+#moonIcon {
+    display: none;
+
+}
+
+body.dark-mode #moonIcon {
+    display: block;
+}
+
+#colorToggle {
+    display: block;
+}
+
+body.dark-mode #colorToggle {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
